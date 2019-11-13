@@ -1,0 +1,8 @@
+prefix=/home/zzy/sia_arm/install
+
+Name: sia_7f_arm_moveit_config
+Description: Description of sia_7f_arm_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/zzy/sia_arm/install/lib 
+Requires: 
