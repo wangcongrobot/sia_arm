@@ -491,6 +491,45 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named data
+
+# Build rule for target.
+data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 data
+.PHONY : data
+
+# fast build rule for target.
+data/fast:
+	$(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/build
+.PHONY : data/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named sia_7f_arm_control
+
+# Build rule for target.
+sia_7f_arm_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sia_7f_arm_control
+.PHONY : sia_7f_arm_control
+
+# fast build rule for target.
+sia_7f_arm_control/fast:
+	$(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/build
+.PHONY : sia_7f_arm_control/fast
+
+#=============================================================================
 # Target rules for targets named data_record
 
 # Build rule for target.
@@ -528,6 +567,19 @@ octomap_msgs_generate_messages_lisp: cmake_check_build_system
 octomap_msgs_generate_messages_lisp/fast:
 	$(MAKE) -f sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
 .PHONY : octomap_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named move_control
+
+# Build rule for target.
+move_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_control
+.PHONY : move_control
+
+# fast build rule for target.
+move_control/fast:
+	$(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/build
+.PHONY : move_control/fast
 
 #=============================================================================
 # Target rules for targets named moveit_msgs_generate_messages_nodejs
@@ -1672,9 +1724,13 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... data"
+	@echo "... main"
+	@echo "... sia_7f_arm_control"
 	@echo "... data_record"
 	@echo "... moveit_msgs_generate_messages_py"
 	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... move_control"
 	@echo "... moveit_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_eus"

@@ -63,9 +63,13 @@
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/rebuild_cache.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/edit_cache.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/install/strip.dir
+/home/zzy/sia_arm/build/sia_serial/CMakeFiles/data.dir
+/home/zzy/sia_arm/build/sia_serial/CMakeFiles/main.dir
+/home/zzy/sia_arm/build/sia_serial/CMakeFiles/sia_7f_arm_control.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/data_record.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/moveit_msgs_generate_messages_py.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir
+/home/zzy/sia_arm/build/sia_serial/CMakeFiles/move_control.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/actionlib_msgs_generate_messages_py.dir
 /home/zzy/sia_arm/build/sia_serial/CMakeFiles/geometry_msgs_generate_messages_eus.dir

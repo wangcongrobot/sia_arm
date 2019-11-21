@@ -2,104 +2,111 @@
 #ifndef DATA_H_INCLUDED
 #define DATA_H_INCLUDED
 
+#include<stdio.h>
 
 typedef struct
 {
-	unsigned short pos : 12;//¿ØÖÆÃüÁî Î»ÖÃ
-	unsigned short mode : 3;//ÔË¶¯Ä£Ê½
-	unsigned short frz : 1;//¶³½á×´Ì¬
-} MSJOINT; //Ö÷ÊÖ¸ø´ÓÊÖµÄ¹Ø½ÚÐÅÏ¢
+	unsigned short pos : 12;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Î»ï¿½ï¿½
+	unsigned short mode : 3;//ï¿½Ë¶ï¿½Ä£Ê½
+	unsigned short frz : 1;//ï¿½ï¿½ï¿½ï¿½×´Ì¬
+} MSJOINT; //ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ÖµÄ¹Ø½ï¿½ï¿½ï¿½Ï¢
 
 typedef struct
 {
 	unsigned char head;//'M'
-	unsigned char id;//ÓÃÀ´Ö¸Ê¾¸Ã°üÊý¾ÝµÄº¬Òå
+	unsigned char id;//ï¿½ï¿½ï¿½ï¿½Ö¸Ê¾ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½ï¿½
 
-					 //Ò»ÏÂ7¸öÁ¿ÖÐµÄ2¸ö»òÕß¶à¸ö£¬¿ÉÄÜ»á±»¸´ÓÃ
-	MSJOINT joint[7];//µ××ù°Ú¶¯ ´ó±Û¸©Ñö Öâ¹Ø½Ú¸©Ñö Ç°±ÛÐý×ª Íó¹Ø½Ú¸©Ñö Íó¹Ø½ÚÐý×ª ¼ÐÇ¯¼Ð³Ö
-					 //MSJOINT Azimuth;//µ××ù°Ú¶¯
-					 //MSJOINT Shoulder;//´ó±Û¸©Ñö
-					 //MSJOINT ELbowPi;//Öâ¹Ø½Ú¸©Ñö
-					 //MSJOINT ForeArm;//Ç°±ÛÐý×ª Ã»ÓÐ¼«ÏÞÎ»
-					 //MSJOINT WristPi;//Íó¹Ø½Ú¸©Ñö
-					 //MSJOINT WristRo;//Íó¹Ø½ÚÐý×ª Ã»ÓÐ¼«ÏÞÎ» Íó×ªÄ£Ê½ ËÙ¶È-Î»ÖÃ
-					 //MSJOINT JawClamp;//¼ÐÇ¯¼Ð³Ö ¼ÐÇ¯Ä£Ê½ Î»ÖÃ-¿ª¹Ø-¼Ð½ô-Ëø½ô
+					 //Ò»ï¿½ï¿½7ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü»á±»ï¿½ï¿½ï¿½ï¿½
+	MSJOINT joint[7];//ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½ Ç°ï¿½ï¿½ï¿½ï¿½×ª ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ø½ï¿½ï¿½ï¿½×ª ï¿½ï¿½Ç¯ï¿½Ð³ï¿½
+					 //MSJOINT Azimuth;//ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½
+					 //MSJOINT Shoulder;//ï¿½ï¿½Û¸ï¿½ï¿½ï¿½
+					 //MSJOINT ELbowPi;//ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½
+					 //MSJOINT ForeArm;//Ç°ï¿½ï¿½ï¿½ï¿½×ª Ã»ï¿½Ð¼ï¿½ï¿½ï¿½Î»
+					 //MSJOINT WristPi;//ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½
+					 //MSJOINT WristRo;//ï¿½ï¿½Ø½ï¿½ï¿½ï¿½×ª Ã»ï¿½Ð¼ï¿½ï¿½ï¿½Î» ï¿½ï¿½×ªÄ£Ê½ ï¿½Ù¶ï¿½-Î»ï¿½ï¿½
+					 //MSJOINT JawClamp;//ï¿½ï¿½Ç¯ï¿½Ð³ï¿½ ï¿½ï¿½Ç¯Ä£Ê½ Î»ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½-ï¿½Ð½ï¿½-ï¿½ï¿½ï¿½ï¿½
 
-	unsigned char Frz : 2;//´ÓÊÖ¼¤»î-¶³½á-Ëø¶¨
-	unsigned char Hydro : 1;//ÒºÑ¹¿ªÆô-¹Ø¶Ï
-	unsigned char DynMod : 1;//¶¯Ì¬ÌØÐÔ ¿ìËÙ-ÂýËÙ
-	unsigned char MoveRatio : 4;//ÔË¶¯±ÈÀý 10%-20%¡«100%½ô
+	unsigned char Frz : 2;//ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½
+	unsigned char Hydro : 1;//ÒºÑ¹ï¿½ï¿½ï¿½ï¿½-ï¿½Ø¶ï¿½
+	unsigned char DynMod : 1;//ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½
+	unsigned char MoveRatio : 4;//ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ 10%-20%ï¿½ï¿½100%ï¿½ï¿½
 
-	unsigned char JawSpd : 2;//¼ÐÇ¯ËÙ¶È ×îÂý-ÂýËÙ-¿ìËÙ-×î¿ì
-	unsigned char Res1 : 6;//Áô´ýÀ©Õ¹
-						   //µÚ19¸ö×Ö½Ú ²ÎÊýÉèÖÃÊ±Ê¹ÓÃ
-	unsigned char key : 3;//°´ÏÂµÄÊÇÄÇ¸ö¼ü
-	unsigned char index : 5;//µ±Ç°¶ÔÓ¦µÄ²ÎÊý±àºÅ£¬ÊÕ¾íÊ±Îª0£»
-							//µÚ20¸ö×Ö½Ú
+	unsigned char JawSpd : 2;//ï¿½ï¿½Ç¯ï¿½Ù¶ï¿½ ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½
+	unsigned char Res1 : 6;//ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹
+						   //ï¿½ï¿½19ï¿½ï¿½ï¿½Ö½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Ê¹ï¿½ï¿½
+	unsigned char key : 3;//ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½
+	unsigned char index : 5;//ï¿½ï¿½Ç°ï¿½ï¿½Ó¦ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½Å£ï¿½ï¿½Õ¾ï¿½Ê±Îª0ï¿½ï¿½
+							//ï¿½ï¿½20ï¿½ï¿½ï¿½Ö½ï¿½
 	unsigned char asterisk;//'*'
-	unsigned short checksum;//Ð£ÑéºÍ Ç°ÃæËùÓÐ×ÖµÄÒì»ò^
-	unsigned short END;//"\r\n"»Ø³µ»»ÐÐ
-} MCMD; //Ö÷ÊÖ·¢ËÍÃüÁîÐÅÏ¢
+	unsigned short checksum;//Ð£ï¿½ï¿½ï¿½ Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½^
+	unsigned short END;//"\r\n"ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½
+} MCMD; //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 
 typedef struct
 {
-	unsigned short pos : 12;//¹Ø½Ú·´À¡Öµ Î»ÖÃ
-	unsigned short ctrlErr : 1;//¿ØÖÆ´íÎó
-	unsigned short contiErr : 1;//²ÉÑùÁ¬ÐøÐÔ´íÎó
-	unsigned short overErrA : 1;//³¬ÏÞ´íÎó
-	unsigned short overErrB : 1;//³¬ÏÞ´íÎó
-} SMJOINT; //´ÓÊÖ¸øÖ÷ÊÖµÄ¹Ø½ÚÐÅÏ¢
+	unsigned short pos : 12;//ï¿½Ø½Ú·ï¿½ï¿½ï¿½Öµ Î»ï¿½ï¿½
+	unsigned short ctrlErr : 1;//ï¿½ï¿½ï¿½Æ´ï¿½ï¿½ï¿½
+	unsigned short contiErr : 1;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½
+	unsigned short overErrA : 1;//ï¿½ï¿½ï¿½Þ´ï¿½ï¿½ï¿½
+	unsigned short overErrB : 1;//ï¿½ï¿½ï¿½Þ´ï¿½ï¿½ï¿½
+} SMJOINT; //ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ÖµÄ¹Ø½ï¿½ï¿½ï¿½Ï¢
 typedef struct
 {
 	unsigned char head;//'S'
-	unsigned char id;//ÓÃÀ´Ö¸Ê¾¸Ã°üÊý¾ÝµÄº¬Òå
+	unsigned char id;//ï¿½ï¿½ï¿½ï¿½Ö¸Ê¾ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½ï¿½
 
-	SMJOINT joint[7];//µ××ù°Ú¶¯ ´ó±Û¸©Ñö Öâ¹Ø½Ú¸©Ñö Ç°±ÛÐý×ª Íó¹Ø½Ú¸©Ñö Íó¹Ø½ÚÐý×ª ¼ÐÇ¯¼Ð³Ö
+	SMJOINT joint[7];//ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½ Ç°ï¿½ï¿½ï¿½ï¿½×ª ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ø½ï¿½ï¿½ï¿½×ª ï¿½ï¿½Ç¯ï¿½Ð³ï¿½
 					
-	unsigned char timeoutErr : 1;//½ÓÊÕÖ÷ÊÖÊý¾Ý³¬Ê±
-	unsigned char telemErr : 7;//ºÍ¹Ø½ÚÊ§È¥ÁªÏµ ¸Ð¾õÃ»±ØÒª
+	unsigned char timeoutErr : 1;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½Ê±
+	unsigned char telemErr : 7;//ï¿½Í¹Ø½ï¿½Ê§È¥ï¿½ï¿½Ïµ ï¿½Ð¾ï¿½Ã»ï¿½ï¿½Òª
 							 
-	unsigned char res1;//±£Áô
-	unsigned char echo;//±£Áô
-					   //µÚ20×Ö½Ú
+	unsigned char res1;//ï¿½ï¿½ï¿½ï¿½
+	unsigned char echo;//ï¿½ï¿½ï¿½ï¿½
+					   //ï¿½ï¿½20ï¿½Ö½ï¿½
 	unsigned char asterisk;//'*'
-	unsigned short checksum;//Ð£ÑéºÍ Ç°ÃæËùÓÐ×ÖµÄÒì»ò^
-	unsigned short END;//"\r\n"»Ø³µ»»ÐÐ
-} SFEED; //´ÓÊÖ·´À¡ÐÅÏ¢ ·¢ËÍÍê±Ï´óÔ¼ÐèÒª12ºÁÃë
+	unsigned short checksum;//Ð£ï¿½ï¿½ï¿½ Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½^
+	unsigned short END;//"\r\n"ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½
+} SFEED; //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½Ô¼ï¿½ï¿½Òª12ï¿½ï¿½ï¿½ï¿½
 
 typedef struct
 {
 	unsigned char head;//'S'
-	unsigned char id;//ÓÃÀ´Ö¸Ê¾¸Ã°üÊý¾ÝµÄº¬Òå
+	unsigned char id;//ï¿½ï¿½ï¿½ï¿½Ö¸Ê¾ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½ï¿½
 
-	unsigned short scmdPos[7];//µ××ù°Ú¶¯ ´ó±Û¸©Ñö Öâ¹Ø½Ú¸©Ñö Ç°±ÛÐý×ª Íó¹Ø½Ú¸©Ñö Íó¹Ø½ÚÐý×ª ¼ÐÇ¯¼Ð³Ö¿ØÖÆÁ¿ÐÅÏ¢
+	unsigned short scmdPos[7];//ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ ï¿½ï¿½Û¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½ Ç°ï¿½ï¿½ï¿½ï¿½×ª ï¿½ï¿½Ø½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½Ø½ï¿½ï¿½ï¿½×ª ï¿½ï¿½Ç¯ï¿½Ð³Ö¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 
-	unsigned char timeoutErr : 1;//½ÓÊÕÖ÷ÊÖÊý¾Ý³¬Ê±
-	unsigned char telemErr : 7;//ºÍ¹Ø½ÚÊ§È¥ÁªÏµ ¸Ð¾õÃ»±ØÒª
+	unsigned char timeoutErr : 1;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½Ê±
+	unsigned char telemErr : 7;//ï¿½Í¹Ø½ï¿½Ê§È¥ï¿½ï¿½Ïµ ï¿½Ð¾ï¿½Ã»ï¿½ï¿½Òª
 
-	unsigned char res1;//±£Áô
-	unsigned char res2;//±£Áô
+	unsigned char res1;//ï¿½ï¿½ï¿½ï¿½
+	unsigned char res2;//ï¿½ï¿½ï¿½ï¿½
 	unsigned char asterisk;//'*'
-	unsigned short checksum;//Ð£ÑéºÍ Ç°ÃæËùÓÐ×ÖµÄÒì»ò^
-	unsigned short END;//"\r\n"»Ø³µ»»ÐÐ
-} SPOS; //´ÓÊÖÎ»ÖÃ·´À¡ÐÅÏ¢ ·¢ËÍÍê±Ï´óÔ¼ÐèÒª12ºÁÃë
+	unsigned short checksum;//Ð£ï¿½ï¿½ï¿½ Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½^
+	unsigned short END;//"\r\n"ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½
+} SPOS; //ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½Ô¼ï¿½ï¿½Òª12ï¿½ï¿½ï¿½ï¿½
 
-		//ÁãµãÉèÖÃ ´ÓÊÖÈí¼þËùÓÃ½á¹¹
-		//¶¨Òå½á¹¹
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã½á¹¹
+		//ï¿½ï¿½ï¿½ï¿½á¹¹
 typedef struct
 {
 	unsigned char head;//'M' or 'S'
-	unsigned char id;//ÓÃÀ´Ö¸Ê¾¸Ã°üÊý¾ÝµÄº¬Òå ±àºÅ´Ó100¿ªÊ¼
-	unsigned short para[8];//7¸öÁãÆ¯ 7¸ö×îÐ¡Î»ÖÃ 7¸ö×î´óÎ»ÖÃ 16*7¸öÉì¾íÂ·¾¶Öµ
-	unsigned char index;//±£Áô
+	unsigned char id;//ï¿½ï¿½ï¿½ï¿½Ö¸Ê¾ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½ï¿½ ï¿½ï¿½Å´ï¿½100ï¿½ï¿½Ê¼
+	unsigned short para[8];//7ï¿½ï¿½ï¿½ï¿½Æ¯ 7ï¿½ï¿½ï¿½ï¿½Ð¡Î»ï¿½ï¿½ 7ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ 16*7ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½Öµ
+	unsigned char index;//ï¿½ï¿½ï¿½ï¿½
 	unsigned char asterisk;//'*'
-	unsigned short checksum;//Ð£ÑéºÍ Ç°ÃæËùÓÐ×ÖµÄÒì»ò^
-	unsigned short END;//"\r\n"»Ø³µ»»ÐÐ
-} PARAINFO; //²ÎÊýÉèÖÃÐÅÏ¢
+	unsigned short checksum;//Ð£ï¿½ï¿½ï¿½ Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½^
+	unsigned short END;//"\r\n"ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½
+} PARAINFO; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 
 //extern const double Pi;
 //extern unsigned char Ccom5_RXBuff[24];
 //void data_print(unsigned char* buffer, int len);
 //void deg2rad(double* orig, double* dest, int i);
 //unsigned char CheckRecData();
+void data_print(unsigned char* buffer, int len);
+MCMD mCmd;
+SFEED sFeed;
+SPOS sPos;
+SFEED *sfeed;
+SPOS *spos;
 #endif

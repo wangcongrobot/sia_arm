@@ -59,6 +59,8 @@ sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/in
 sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/include/ros/wall_timer.h
 sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/include/ros/wall_timer_options.h
 sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/include/rosconsole/macros_generated.h
+sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/include/serial/serial.h
+sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/include/serial/v8stdint.h
 sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.o: /opt/ros/kinetic/include/xmlrpcpp/XmlRpcValue.h
 

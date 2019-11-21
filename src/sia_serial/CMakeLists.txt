@@ -201,12 +201,18 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
-add_executable(serialport src/serialport.cpp)
-add_dependencies(serialport ${serialport_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(serialport
-   ${catkin_LIBRARIES}
- )
 
+
+#add_executable(serialport src/serialport.cpp)
+
+#add_dependencies(serialport ${serialport_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#target_link_libraries(serialport
+#   ${catkin_LIBRARIES}
+# )
+
+add_library(serialport
+  src/serialport.cpp
+)
 add_library(data_record
   src/data_record.cpp
 )
@@ -221,13 +227,61 @@ target_link_libraries(serialport
 
 link_directories(
   ${catkin_LIB_DIRS} ~/sia_arm/devel/lib
-
 )
 
+
+add_library(sia_7f_arm_control
+  src/actionServer.cpp
+)
 add_executable(actionServer
   src/actionServer.cpp
 )
 add_dependencies(actionServer ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(actionServer
   ${catkin_LIBRARIES}
+)
+
+target_link_libraries(actionServer
+  ${catkin_LIBRARIES} sia_7f_arm_control
+) 
+
+add_library(move_control
+  src/move_control.cpp
+)
+
+#add_executable(move_control
+#  src/move_control.cpp
+#)
+add_dependencies(move_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(move_control
+  ${catkin_LIBRARIES}
+)
+
+add_executable(main
+  src/main.cpp
+)
+add_dependencies(main ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(main
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(main
+  ${catkin_LIBRARIES} move_control 
+) 
+target_link_libraries(main
+  ${catkin_LIBRARIES} serialport 
+)
+target_link_libraries(main
+  ${catkin_LIBRARIES} sia_7f_arm_control
+) 
+
+
+add_library(data
+  src/data.cpp
+)
+target_link_libraries(move_control
+  ${catkin_LIBRARIES} data 
+)
+target_link_libraries(move_control
+  ${catkin_LIBRARIES} sia_7f_arm_control 
 )

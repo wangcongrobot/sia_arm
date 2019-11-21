@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/serialport.dir/src/serialport.cpp.o"
-  "/home/zzy/sia_arm/devel/lib/sia_serial/serialport.pdb"
-  "/home/zzy/sia_arm/devel/lib/sia_serial/serialport"
+  "/home/zzy/sia_arm/devel/lib/libserialport.pdb"
+  "/home/zzy/sia_arm/devel/lib/libserialport.so"
 )
 
 # Per-language clean rules from dependency scanning.

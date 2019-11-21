@@ -111,6 +111,28 @@ actionServer_EXTERNAL_OBJECTS =
 /home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 /home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libpthread.so
 /home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/libserial.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/libactionlib.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/libroscpp.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/librosconsole.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/librostime.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /opt/ros/kinetic/lib/libcpp_common.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/zzy/sia_arm/devel/lib/sia_serial/actionServer: /home/zzy/sia_arm/devel/lib/libsia_7f_arm_control.so
 /home/zzy/sia_arm/devel/lib/sia_serial/actionServer: sia_serial/CMakeFiles/actionServer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/zzy/sia_arm/devel/lib/sia_serial/actionServer"
 	cd /home/zzy/sia_arm/build/sia_serial && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/actionServer.dir/link.txt --verbose=$(VERBOSE)

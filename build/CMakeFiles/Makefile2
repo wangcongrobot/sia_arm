@@ -246,7 +246,7 @@ gtest/preinstall: gtest/gtest/preinstall
 gtest/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=5,6,7 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=7,8,9 "Built target gmock"
 .PHONY : gtest/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -278,7 +278,7 @@ clean: gtest/CMakeFiles/gmock.dir/clean
 gtest/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=8,9,10,11 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=10,11,12,13 "Built target gmock_main"
 .PHONY : gtest/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -329,7 +329,7 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=12,13 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=14,15 "Built target gtest"
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -361,7 +361,7 @@ clean: gtest/gtest/CMakeFiles/gtest.dir/clean
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=14,15 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=16,17 "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -952,16 +952,24 @@ clean: sia_7f_arm_description/CMakeFiles/_catkin_empty_exported_target.dir/clean
 # Directory level rules for directory sia_serial
 
 # Convenience name for "all" pass in the directory.
+sia_serial/all: sia_serial/CMakeFiles/data.dir/all
+sia_serial/all: sia_serial/CMakeFiles/main.dir/all
+sia_serial/all: sia_serial/CMakeFiles/sia_7f_arm_control.dir/all
 sia_serial/all: sia_serial/CMakeFiles/data_record.dir/all
+sia_serial/all: sia_serial/CMakeFiles/move_control.dir/all
 sia_serial/all: sia_serial/CMakeFiles/serialport.dir/all
 sia_serial/all: sia_serial/CMakeFiles/actionServer.dir/all
 
 .PHONY : sia_serial/all
 
 # Convenience name for "clean" pass in the directory.
+sia_serial/clean: sia_serial/CMakeFiles/data.dir/clean
+sia_serial/clean: sia_serial/CMakeFiles/main.dir/clean
+sia_serial/clean: sia_serial/CMakeFiles/sia_7f_arm_control.dir/clean
 sia_serial/clean: sia_serial/CMakeFiles/data_record.dir/clean
 sia_serial/clean: sia_serial/CMakeFiles/moveit_msgs_generate_messages_py.dir/clean
 sia_serial/clean: sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
+sia_serial/clean: sia_serial/CMakeFiles/move_control.dir/clean
 sia_serial/clean: sia_serial/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/clean
 sia_serial/clean: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 sia_serial/clean: sia_serial/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
@@ -1014,6 +1022,181 @@ sia_serial/clean: sia_serial/CMakeFiles/octomap_msgs_generate_messages_nodejs.di
 sia_serial/preinstall:
 
 .PHONY : sia_serial/preinstall
+
+#=============================================================================
+# Target rules for target sia_serial/CMakeFiles/data.dir
+
+# All Build rule for target.
+sia_serial/CMakeFiles/data.dir/all:
+	$(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/depend
+	$(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=3,4 "Built target data"
+.PHONY : sia_serial/CMakeFiles/data.dir/all
+
+# Include target in all.
+all: sia_serial/CMakeFiles/data.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sia_serial/CMakeFiles/data.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/data.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 0
+.PHONY : sia_serial/CMakeFiles/data.dir/rule
+
+# Convenience name for target.
+data: sia_serial/CMakeFiles/data.dir/rule
+
+.PHONY : data
+
+# clean rule for target.
+sia_serial/CMakeFiles/data.dir/clean:
+	$(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/clean
+.PHONY : sia_serial/CMakeFiles/data.dir/clean
+
+# clean rule for target.
+clean: sia_serial/CMakeFiles/data.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target sia_serial/CMakeFiles/main.dir
+
+# All Build rule for target.
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/data.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/sia_7f_arm_control.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/data_record.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/move_control.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/serialport.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/main.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/depend
+	$(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=18,19 "Built target main"
+.PHONY : sia_serial/CMakeFiles/main.dir/all
+
+# Include target in all.
+all: sia_serial/CMakeFiles/main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sia_serial/CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 0
+.PHONY : sia_serial/CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: sia_serial/CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# clean rule for target.
+sia_serial/CMakeFiles/main.dir/clean:
+	$(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/clean
+.PHONY : sia_serial/CMakeFiles/main.dir/clean
+
+# clean rule for target.
+clean: sia_serial/CMakeFiles/main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target sia_serial/CMakeFiles/sia_7f_arm_control.dir
+
+# All Build rule for target.
+sia_serial/CMakeFiles/sia_7f_arm_control.dir/all:
+	$(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/depend
+	$(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=28,29 "Built target sia_7f_arm_control"
+.PHONY : sia_serial/CMakeFiles/sia_7f_arm_control.dir/all
+
+# Include target in all.
+all: sia_serial/CMakeFiles/sia_7f_arm_control.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sia_serial/CMakeFiles/sia_7f_arm_control.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/sia_7f_arm_control.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 0
+.PHONY : sia_serial/CMakeFiles/sia_7f_arm_control.dir/rule
+
+# Convenience name for target.
+sia_7f_arm_control: sia_serial/CMakeFiles/sia_7f_arm_control.dir/rule
+
+.PHONY : sia_7f_arm_control
+
+# clean rule for target.
+sia_serial/CMakeFiles/sia_7f_arm_control.dir/clean:
+	$(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/clean
+.PHONY : sia_serial/CMakeFiles/sia_7f_arm_control.dir/clean
+
+# clean rule for target.
+clean: sia_serial/CMakeFiles/sia_7f_arm_control.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target sia_serial/CMakeFiles/data_record.dir
@@ -1081,7 +1264,7 @@ sia_serial/CMakeFiles/data_record.dir/all: sia_serial/CMakeFiles/shape_msgs_gene
 sia_serial/CMakeFiles/data_record.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f sia_serial/CMakeFiles/data_record.dir/build.make sia_serial/CMakeFiles/data_record.dir/depend
 	$(MAKE) -f sia_serial/CMakeFiles/data_record.dir/build.make sia_serial/CMakeFiles/data_record.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=3,4 "Built target data_record"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=5,6 "Built target data_record"
 .PHONY : sia_serial/CMakeFiles/data_record.dir/all
 
 # Include target in all.
@@ -1172,6 +1355,104 @@ sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean:
 
 # clean rule for target.
 clean: sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target sia_serial/CMakeFiles/move_control.dir
+
+# All Build rule for target.
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/data.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/sia_7f_arm_control.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_lisp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_eus.dir/all
+sia_serial/CMakeFiles/move_control.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/depend
+	$(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=20,21 "Built target move_control"
+.PHONY : sia_serial/CMakeFiles/move_control.dir/all
+
+# Include target in all.
+all: sia_serial/CMakeFiles/move_control.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+sia_serial/CMakeFiles/move_control.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/move_control.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 0
+.PHONY : sia_serial/CMakeFiles/move_control.dir/rule
+
+# Convenience name for target.
+move_control: sia_serial/CMakeFiles/move_control.dir/rule
+
+.PHONY : move_control
+
+# clean rule for target.
+sia_serial/CMakeFiles/move_control.dir/clean:
+	$(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/clean
+.PHONY : sia_serial/CMakeFiles/move_control.dir/clean
+
+# clean rule for target.
+clean: sia_serial/CMakeFiles/move_control.dir/clean
 
 .PHONY : clean
 
@@ -1595,70 +1876,10 @@ clean: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/cl
 # Target rules for target sia_serial/CMakeFiles/serialport.dir
 
 # All Build rule for target.
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/roscpp_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/data_record.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_lisp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_nodejs.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/shape_msgs_generate_messages_eus.dir/all
-sia_serial/CMakeFiles/serialport.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f sia_serial/CMakeFiles/serialport.dir/build.make sia_serial/CMakeFiles/serialport.dir/depend
 	$(MAKE) -f sia_serial/CMakeFiles/serialport.dir/build.make sia_serial/CMakeFiles/serialport.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=20,21 "Built target serialport"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=26,27 "Built target serialport"
 .PHONY : sia_serial/CMakeFiles/serialport.dir/all
 
 # Include target in all.
@@ -1963,6 +2184,7 @@ sia_serial/CMakeFiles/actionServer.dir/all: sia_7f_arm_control/CMakeFiles/rosgra
 sia_serial/CMakeFiles/actionServer.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 sia_serial/CMakeFiles/actionServer.dir/all: sia_7f_arm_control/CMakeFiles/std_msgs_generate_messages_py.dir/all
 sia_serial/CMakeFiles/actionServer.dir/all: sia_7f_arm_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+sia_serial/CMakeFiles/actionServer.dir/all: sia_serial/CMakeFiles/sia_7f_arm_control.dir/all
 sia_serial/CMakeFiles/actionServer.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_py.dir/all
 sia_serial/CMakeFiles/actionServer.dir/all: sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/all
 sia_serial/CMakeFiles/actionServer.dir/all: sia_serial/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/all
@@ -2020,7 +2242,7 @@ all: sia_serial/CMakeFiles/actionServer.dir/all
 
 # Build rule for subdir invocation for target.
 sia_serial/CMakeFiles/actionServer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/actionServer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zzy/sia_arm/build/CMakeFiles 0
 .PHONY : sia_serial/CMakeFiles/actionServer.dir/rule
@@ -3385,7 +3607,7 @@ clean: roboticsgroup_gazebo_plugins/CMakeFiles/gazebo_msgs_generate_messages_nod
 roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/all:
 	$(MAKE) -f roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/build.make roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/depend
 	$(MAKE) -f roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/build.make roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=18,19 "Built target roboticsgroup_gazebo_mimic_joint_plugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=24,25 "Built target roboticsgroup_gazebo_mimic_joint_plugin"
 .PHONY : roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/all
 
 # Include target in all.
@@ -4030,7 +4252,7 @@ clean: roboticsgroup_gazebo_plugins/CMakeFiles/control_msgs_generate_messages_py
 roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/all:
 	$(MAKE) -f roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/build.make roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/depend
 	$(MAKE) -f roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/build.make roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=16,17 "Built target roboticsgroup_gazebo_disable_link_plugin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zzy/sia_arm/build/CMakeFiles --progress-num=22,23 "Built target roboticsgroup_gazebo_disable_link_plugin"
 .PHONY : roboticsgroup_gazebo_plugins/CMakeFiles/roboticsgroup_gazebo_disable_link_plugin.dir/all
 
 # Include target in all.

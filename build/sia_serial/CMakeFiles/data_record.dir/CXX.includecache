@@ -7,8 +7,12 @@
 #IncludeRegexTransform: 
 
 /home/zzy/sia_arm/src/sia_serial/include/data.h
+stdio.h
+-
 
 /home/zzy/sia_arm/src/sia_serial/include/data_record.h
+data.h
+/home/zzy/sia_arm/src/sia_serial/include/data.h
 stdio.h
 -
 fstream
@@ -19,13 +23,13 @@ time.h
 -
 ros/ros.h
 -
+serial/serial.h
+-
+iostream
+-
 
 /home/zzy/sia_arm/src/sia_serial/src/data_record.cpp
 data_record.h
--
-data.h
--
-ros/ros.h
 -
 
 /opt/ros/kinetic/include/ros/advertise_options.h
@@ -669,6 +673,32 @@ ros/forwards.h
 /opt/ros/kinetic/include/ros/ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
+
+/opt/ros/kinetic/include/serial/serial.h
+limits
+-
+vector
+-
+string
+-
+cstring
+-
+sstream
+-
+exception
+-
+stdexcept
+-
+serial/v8stdint.h
+-
+
+/opt/ros/kinetic/include/serial/v8stdint.h
+stddef.h
+-
+stdio.h
+-
+stdint.h
+-
 
 /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h

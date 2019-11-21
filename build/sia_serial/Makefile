@@ -166,6 +166,51 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+sia_serial/CMakeFiles/data.dir/rule:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/data.dir/rule
+.PHONY : sia_serial/CMakeFiles/data.dir/rule
+
+# Convenience name for target.
+data: sia_serial/CMakeFiles/data.dir/rule
+
+.PHONY : data
+
+# fast build rule for target.
+data/fast:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/build
+.PHONY : data/fast
+
+# Convenience name for target.
+sia_serial/CMakeFiles/main.dir/rule:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/main.dir/rule
+.PHONY : sia_serial/CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: sia_serial/CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+# Convenience name for target.
+sia_serial/CMakeFiles/sia_7f_arm_control.dir/rule:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/sia_7f_arm_control.dir/rule
+.PHONY : sia_serial/CMakeFiles/sia_7f_arm_control.dir/rule
+
+# Convenience name for target.
+sia_7f_arm_control: sia_serial/CMakeFiles/sia_7f_arm_control.dir/rule
+
+.PHONY : sia_7f_arm_control
+
+# fast build rule for target.
+sia_7f_arm_control/fast:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/build
+.PHONY : sia_7f_arm_control/fast
+
+# Convenience name for target.
 sia_serial/CMakeFiles/data_record.dir/rule:
 	cd /home/zzy/sia_arm/build && $(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/data_record.dir/rule
 .PHONY : sia_serial/CMakeFiles/data_record.dir/rule
@@ -209,6 +254,21 @@ octomap_msgs_generate_messages_lisp: sia_serial/CMakeFiles/octomap_msgs_generate
 octomap_msgs_generate_messages_lisp/fast:
 	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make sia_serial/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
 .PHONY : octomap_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+sia_serial/CMakeFiles/move_control.dir/rule:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f CMakeFiles/Makefile2 sia_serial/CMakeFiles/move_control.dir/rule
+.PHONY : sia_serial/CMakeFiles/move_control.dir/rule
+
+# Convenience name for target.
+move_control: sia_serial/CMakeFiles/move_control.dir/rule
+
+.PHONY : move_control
+
+# fast build rule for target.
+move_control/fast:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/build
+.PHONY : move_control/fast
 
 # Convenience name for target.
 sia_serial/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/rule:
@@ -891,6 +951,7 @@ src/actionServer.o: src/actionServer.cpp.o
 
 # target to build an object file
 src/actionServer.cpp.o:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/src/actionServer.cpp.o
 	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/actionServer.dir/build.make sia_serial/CMakeFiles/actionServer.dir/src/actionServer.cpp.o
 .PHONY : src/actionServer.cpp.o
 
@@ -900,6 +961,7 @@ src/actionServer.i: src/actionServer.cpp.i
 
 # target to preprocess a source file
 src/actionServer.cpp.i:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/src/actionServer.cpp.i
 	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/actionServer.dir/build.make sia_serial/CMakeFiles/actionServer.dir/src/actionServer.cpp.i
 .PHONY : src/actionServer.cpp.i
 
@@ -909,8 +971,36 @@ src/actionServer.s: src/actionServer.cpp.s
 
 # target to generate assembly for a file
 src/actionServer.cpp.s:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/sia_7f_arm_control.dir/build.make sia_serial/CMakeFiles/sia_7f_arm_control.dir/src/actionServer.cpp.s
 	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/actionServer.dir/build.make sia_serial/CMakeFiles/actionServer.dir/src/actionServer.cpp.s
 .PHONY : src/actionServer.cpp.s
+
+src/data.o: src/data.cpp.o
+
+.PHONY : src/data.o
+
+# target to build an object file
+src/data.cpp.o:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/src/data.cpp.o
+.PHONY : src/data.cpp.o
+
+src/data.i: src/data.cpp.i
+
+.PHONY : src/data.i
+
+# target to preprocess a source file
+src/data.cpp.i:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/src/data.cpp.i
+.PHONY : src/data.cpp.i
+
+src/data.s: src/data.cpp.s
+
+.PHONY : src/data.s
+
+# target to generate assembly for a file
+src/data.cpp.s:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/data.dir/build.make sia_serial/CMakeFiles/data.dir/src/data.cpp.s
+.PHONY : src/data.cpp.s
 
 src/data_record.o: src/data_record.cpp.o
 
@@ -938,6 +1028,60 @@ src/data_record.s: src/data_record.cpp.s
 src/data_record.cpp.s:
 	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/data_record.dir/build.make sia_serial/CMakeFiles/data_record.dir/src/data_record.cpp.s
 .PHONY : src/data_record.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/main.dir/build.make sia_serial/CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/move_control.o: src/move_control.cpp.o
+
+.PHONY : src/move_control.o
+
+# target to build an object file
+src/move_control.cpp.o:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/src/move_control.cpp.o
+.PHONY : src/move_control.cpp.o
+
+src/move_control.i: src/move_control.cpp.i
+
+.PHONY : src/move_control.i
+
+# target to preprocess a source file
+src/move_control.cpp.i:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/src/move_control.cpp.i
+.PHONY : src/move_control.cpp.i
+
+src/move_control.s: src/move_control.cpp.s
+
+.PHONY : src/move_control.s
+
+# target to generate assembly for a file
+src/move_control.cpp.s:
+	cd /home/zzy/sia_arm/build && $(MAKE) -f sia_serial/CMakeFiles/move_control.dir/build.make sia_serial/CMakeFiles/move_control.dir/src/move_control.cpp.s
+.PHONY : src/move_control.cpp.s
 
 src/serialport.o: src/serialport.cpp.o
 
@@ -977,9 +1121,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... install/strip"
+	@echo "... data"
+	@echo "... main"
+	@echo "... sia_7f_arm_control"
 	@echo "... data_record"
 	@echo "... moveit_msgs_generate_messages_py"
 	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... move_control"
 	@echo "... moveit_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_eus"
@@ -1030,9 +1178,18 @@ help:
 	@echo "... src/actionServer.o"
 	@echo "... src/actionServer.i"
 	@echo "... src/actionServer.s"
+	@echo "... src/data.o"
+	@echo "... src/data.i"
+	@echo "... src/data.s"
 	@echo "... src/data_record.o"
 	@echo "... src/data_record.i"
 	@echo "... src/data_record.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/move_control.o"
+	@echo "... src/move_control.i"
+	@echo "... src/move_control.s"
 	@echo "... src/serialport.o"
 	@echo "... src/serialport.i"
 	@echo "... src/serialport.s"
