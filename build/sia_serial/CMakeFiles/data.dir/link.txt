@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libdata.so -o /home/zzy/sia_arm/devel/lib/libdata.so CMakeFiles/data.dir/src/data.cpp.o  -L/home/zzy/sia_arm/devel/lib 

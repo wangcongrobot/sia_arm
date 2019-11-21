@@ -1,2 +1,0 @@
-roboticsgroup_gazebo_plugins:sia_7f_arm_control:sia_7f_arm_description:sia_7f_arm_moveit_config:sia_serial
--DCATKIN_DEVEL_PREFIX=/home/zzy/sia_arm/devel -DCMAKE_INSTALL_PREFIX=/home/zzy/sia_arm/install -G Unix Makefiles

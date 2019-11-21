@@ -1,8 +1,0 @@
-prefix=/home/zzy/sia_arm/devel
-
-Name: sia_7f_arm_description
-Description: Description of sia_7f_arm_description
-Version: 1.0.0
-Cflags: 
-Libs: -L/home/zzy/sia_arm/devel/lib 
-Requires: 

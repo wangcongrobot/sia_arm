@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libsia_7f_arm_control.so -o /home/zzy/sia_arm/devel/lib/libsia_7f_arm_control.so CMakeFiles/sia_7f_arm_control.dir/src/actionServer.cpp.o  -L/home/zzy/sia_arm/devel/lib 

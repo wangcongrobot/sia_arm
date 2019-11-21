@@ -1,8 +1,0 @@
-prefix=/home/zzy/sia_arm/install
-
-Name: sia_serial
-Description: Description of sia_serial
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/zzy/sia_arm/install/lib 
-Requires: 
